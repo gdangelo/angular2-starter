@@ -1,0 +1,51 @@
+{
+  "name": "angular2-todo",
+  "version": "1.0.0",
+  "description": "A Simple Todo App Written in Angular2 and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dev",
+    "build:dev": "webpack --progress --colors",
+    "build:prod": "webpack --config webpack.prod.config.js --progress --colors",
+    "server:dev": "webpack-dev-server --hot --progress --colors --content-base src/",
+    "server:prod": "http-server dist/ --cors",
+    "start": "npm run server:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdangelo/angular2-todo.git"
+  },
+  "keywords": [
+    "Angular2",
+    "TypeScript",
+    "ES6",
+    "ES2015",
+    "JS",
+    "Todo"
+  ],
+  "author": "Grégory D'Angelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdangelo/angular2-todo/issues"
+  },
+  "homepage": "https://github.com/gdangelo/angular2-todo",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.7",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^1.1.1",
+    "html-webpack-plugin": "^2.9.0",
+    "http-server": "^0.8.5",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.7.5",
+    "typings": "^0.6.8",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
