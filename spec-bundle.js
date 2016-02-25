@@ -1,3 +1,4 @@
+require('es6-shim');
 require('reflect-metadata');
 
 var testing = require('angular2/testing');
