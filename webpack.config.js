@@ -44,7 +44,7 @@ module.exports = {
   module: {
     loaders: [
       // Support for .ts files
-      { test: /\.tsx?$/, loader: 'ts-loader' },
+      { test: /\.tsx?$/, loader: 'ts-loader', exclude: [ /\.spec\.ts$/ ] },
 
       // support for .html as raw text
       { test: /\.html$/,  loader: 'raw-loader', exclude: [ path.resolve(__dirname, "src/index.html") ] }
